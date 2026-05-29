@@ -1,0 +1,47 @@
+import boto3
+
+# AWS S3 Configuration
+bucket_name = "your-bucket-name"
+
+# Create S3 client
+s3 = boto3.client('s3')
+
+# Upload file function
+def upload_file(file_name):
+    try:
+        s3.upload_file(file_name, bucket_name, file_name)
+        print(f"{file_name} uploaded successfully to S3 bucket")
+    except Exception as e:
+        print("Error:", e)
+
+# Download file function
+def download_file(file_name):
+    try:
+        s3.download_file(bucket_name, file_name, file_name)
+        print(f"{file_name} downloaded successfully")
+    except Exception as e:
+        print("Error:", e)
+
+# Main Program
+while True:
+    print("\nCloud Notes Backup System")
+    print("1. Upload File")
+    print("2. Download File")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        file_name = input("Enter file name to upload: ")
+        upload_file(file_name)
+
+    elif choice == "2":
+        file_name = input("Enter file name to download: ")
+        download_file(file_name)
+
+    elif choice == "3":
+        print("Exiting...")
+        break
+
+    else:
+        print("Invalid choice")
