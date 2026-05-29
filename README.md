@@ -1,5 +1,5 @@
 # aws-s3-notes-backup
-cloud-notes-backup-system
+#cloud-notes-backup-system
 
 A simple cloud-based notes backup system developed using Python and AWS S3 cloud storage services.
 
@@ -9,26 +9,26 @@ This project demonstrates how to upload and download notes/files using Amazon S3
 
 #Features
 
-Upload files to AWS S3
+• Upload files to AWS S3
 
-Download files from cloud storage
+• Download files from cloud storage
 
-Simple command-line interface
+• Simple command-line interface
 
-Cloud-based file backup
+• Cloud-based file backup
 
-Beginner-friendly cloud project
+• Beginner-friendly cloud project
 
 
 #Technologies Used
 
-Python
+• Python
 
-AWS S3
+• AWS S3
 
-boto3
+• boto3
 
-GitHub
+• GitHub
 
 
 #How it Works
@@ -51,15 +51,15 @@ GitHub
 
 #Learning Outcomes
 
-Understanding AWS S3 cloud storage
+• Understanding AWS S3 cloud storage
 
-File upload and download operations
+• File upload and download operations
 
-Using boto3 library in Python
+• Using boto3 library in Python
 
-Basic cloud storage management
+• Basic cloud storage management
 
-Working with AWS services
+• Working with AWS services
 
 
 #Author
